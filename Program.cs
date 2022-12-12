@@ -6,6 +6,7 @@
         {
             List<Person> list = new List<Person>();
             AddingPersonDetailsIntoList(list);
+            PersonDataManagement.RetrieveTop2RecordsBasedOnAge(list);    //UC2
             Console.WriteLine();
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
