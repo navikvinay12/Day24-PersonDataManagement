@@ -7,7 +7,8 @@
             List<Person> list = new List<Person>();
             AddingPersonDetailsIntoList(list);
             PersonDataManagement.RetrieveTop2RecordsBasedOnAge(list);    //UC2
-            PersonDataManagement.GetTeenageRecords13To18Only(list);     //UC3
+            PersonDataManagement.GetTeenageRecords13To18Only(list);     //UC3 
+            PersonDataManagement.FindAverageAge(list);     //UC4
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {

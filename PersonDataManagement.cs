@@ -26,5 +26,11 @@ namespace LambdaDemo222Batch
             List<Person> teenageRecords=list.Where(p=>p.Age>13 && p.Age<18).ToList();
             Program.DisplayPersonDetails(teenageRecords);
         }
+        public static void FindAverageAge(List<Person> list) //UC3
+        {
+            Console.WriteLine("\nFinding Average Age");
+            double age = list.Average(p => p.Age);
+            Console.WriteLine("Average Age is : "+age);
+        }
     }
 }
