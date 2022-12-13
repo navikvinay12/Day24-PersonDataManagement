@@ -7,7 +7,7 @@
             List<Person> list = new List<Person>();
             AddingPersonDetailsIntoList(list);
             PersonDataManagement.RetrieveTop2RecordsBasedOnAge(list);    //UC2
-            Console.WriteLine();
+            PersonDataManagement.GetTeenageRecords13To18Only(list);     //UC3
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {
