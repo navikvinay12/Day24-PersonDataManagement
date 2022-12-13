@@ -9,6 +9,11 @@
             PersonDataManagement.RetrieveTop2RecordsBasedOnAge(list);    //UC2
             PersonDataManagement.GetTeenageRecords13To18Only(list);     //UC3 
             PersonDataManagement.FindAverageAge(list);     //UC4
+            PersonDataManagement.SearchPerson(list,"Aruna");     //UC5
+
+            //List<Person> result = PersonDataManagement.SearchPerson(list, "Aruna");     //UC5
+            //if(result!=null)
+            //DisplayPersonDetails(result);         //UC5 (to view the list of names found as per the given name)
         }
         public static void AddingPersonDetailsIntoList(List<Person> list)
         {

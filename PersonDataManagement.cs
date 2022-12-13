@@ -32,5 +32,20 @@ namespace LambdaDemo222Batch
             double age = list.Average(p => p.Age);
             Console.WriteLine("Average Age is : "+age);
         }
+        public static List<Person> SearchPerson(List<Person> list,string name)
+        {
+            //LastOrDefault() or FirstOrDefault() we can use instead of ToList() in below .
+            var result = list.Where(p => p.Name == name).ToList();  
+            if(result.Count!=0)        //or result!=null ; if you want to fetch only single person.
+            {
+                Console.WriteLine($"\n{name} is Present in the List");
+                return result;
+            }
+            else
+            {
+                Console.WriteLine($"\n{name} is Not present in the List");
+                return default;
+            }
+        }
     }
 }
