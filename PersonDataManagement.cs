@@ -47,5 +47,12 @@ namespace LambdaDemo222Batch
                 return default;
             }
         }
+        public static void SkipPersonLessThanAge60(List<Person> list)       //UC6
+        {
+            Console.WriteLine("\nSkipping the records whose age is less than 60");
+            //Note-Sorting is imp here else iteration will stop once condition will fail
+            List<Person> data=list.OrderBy(p => p.Age).SkipWhile(p => p.Age < 60).ToList();
+            Program.DisplayPersonDetails(data);
+        }
     }
 }

@@ -9,7 +9,8 @@
             PersonDataManagement.RetrieveTop2RecordsBasedOnAge(list);    //UC2
             PersonDataManagement.GetTeenageRecords13To18Only(list);     //UC3 
             PersonDataManagement.FindAverageAge(list);     //UC4
-            PersonDataManagement.SearchPerson(list,"Aruna");     //UC5
+            PersonDataManagement.SearchPerson(list,"Arun");     //UC5
+            PersonDataManagement.SkipPersonLessThanAge60(list);     //UC6
 
             //List<Person> result = PersonDataManagement.SearchPerson(list, "Aruna");     //UC5
             //if(result!=null)
