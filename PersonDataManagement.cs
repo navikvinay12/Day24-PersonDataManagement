@@ -54,5 +54,13 @@ namespace LambdaDemo222Batch
             List<Person> data=list.OrderBy(p => p.Age).SkipWhile(p => p.Age < 60).ToList();
             Program.DisplayPersonDetails(data);
         }
+        public static void RemoveGivenPerson(List<Person> list, string name)       //UC7
+        {
+            list.RemoveAll(p=>(p.Name==name));
+            if(list.TrueForAll(e=>e.Name!=name))
+            {
+                Console.WriteLine($"\nAll records with the name=\"{name}\" has been removed from the list.");
+            }
+        }
     }
 }
